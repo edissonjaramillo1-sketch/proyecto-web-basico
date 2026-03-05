@@ -1,0 +1,87 @@
+body{
+  font-family: Arial, sans-serif;
+  background: #f2f2f2;
+  margin: 0;
+  padding: 40px;
+}
+
+.card{
+  background: white;
+  padding: 24px;
+  max-width: 860px;
+  margin: 0 auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+}
+
+.muted{ color:#555; }
+
+.controls{
+  display: flex;
+  gap: 10px;
+  margin: 14px 0;
+  flex-wrap: wrap;
+}
+
+input{
+  padding: 10px 12px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  min-width: 260px;
+}
+
+button{
+  padding: 10px 14px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+button.secondary{
+  background: #e9e9e9;
+}
+
+.estado{
+  margin: 10px 0 16px;
+  font-weight: bold;
+}
+
+.kpi{
+  display: flex;
+  gap: 12px;
+  margin-bottom: 16px;
+  flex-wrap: wrap;
+}
+
+.kpiBox{
+  border: 1px solid #e6e6e6;
+  border-radius: 10px;
+  padding: 10px 12px;
+  min-width: 140px;
+}
+
+.kpiTitle{ display:block; color:#666; font-size: 12px; }
+.kpiValue{ display:block; font-size: 20px; font-weight: bold; }
+
+.grid{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 12px;
+}
+
+.item{
+  border: 1px solid #e6e6e6;
+  border-radius: 12px;
+  padding: 12px;
+}
+
+.tag{
+  display:inline-block;
+  padding: 2px 8px;
+  border-radius: 999px;
+  background: #efefef;
+  font-size: 12px;
+  margin-top: 6px;
+}
+
+small{ color:#666; }

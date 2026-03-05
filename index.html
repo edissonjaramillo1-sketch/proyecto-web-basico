@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Proyecto Web Básico</title>
+  <link rel="stylesheet" href="./css/style.css" />
+</head>
+<body>
+  <main class="card">
+    <h1>Mini App: Catálogo de Cursos</h1>
+    <p class="muted">Cargando datos localmente (simulados) y renderizando en pantalla.</p>
+
+    <section class="controls">
+      <input id="buscador" type="text" placeholder="Buscar por nombre o categoría..." />
+      <button id="btnCargar">Cargar datos</button>
+      <button id="btnLimpiar" class="secondary">Limpiar</button>
+    </section>
+
+    <p id="estado" class="estado">Estado: Sin cargar</p>
+
+    <div class="kpi">
+      <div class="kpiBox">
+        <span class="kpiTitle">Total</span>
+        <span id="kpiTotal" class="kpiValue">0</span>
+      </div>
+      <div class="kpiBox">
+        <span class="kpiTitle">Filtrados</span>
+        <span id="kpiFiltrados" class="kpiValue">0</span>
+      </div>
+    </div>
+
+    <div id="contenedor" class="grid"></div>
+  </main>
+
+  <script src="./js/var.js"></script>
+</body>
+</html>
